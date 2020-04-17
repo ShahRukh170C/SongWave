@@ -1,0 +1,276 @@
+*{
+    color: white;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+body{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(12, 8, 29);
+    color: white;
+    min-height: 100vh;
+    overflow: hidden;
+    
+}
+.containor{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    /* border: 1px solid red; */
+}
+.main-logo{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+.main-logo div{
+    padding-left: 1rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.main-nav a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+.main-nav ul{
+    position: relative;
+    display: flex;
+    list-style: none;
+    /* align-items: center; */
+}
+
+.main-nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+}
+.hoverME:hover{
+    /* font-size: 72px; */
+  background: -webkit-linear-gradient(rgb(30, 11, 105), rgb(181, 67, 185));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ 
+}
+
+
+.full-grow{
+    display: flex;
+    flex-direction: column;    
+}
+.main{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-grow: 1;
+    /* background-color: red; */
+}
+.main section{
+    /* border: 1px solid rgb(181, 67, 185); */
+    flex-grow: 1;
+    /* background-color: rgb(0, 0, 0); */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+.image{
+    flex-grow: 1;
+    background-image: url("./../images/landing-page-girl.png");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    max-height: 70vh;
+    min-width: 30vw;
+    background-size: contain;
+    /* background-position: co; */
+    /* background-color: black; */
+}
+.main-page-intro .title{
+    font-size: 3rem;
+    font-weight: 500;
+
+}
+.main-page-intro .para{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-top: 1rem;
+}
+.middle-text{
+    background: -webkit-linear-gradient(rgb(30, 11, 105), rgb(181, 67, 185));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.main-page-intro .btn{
+    height: 3rem;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    /* margin: 0 auto; */
+    align-items: center;
+    /* border :1px solid rgb(182, 35, 91); */
+    background-image: linear-gradient(rgb(30, 11, 105), rgb(181, 67, 185));
+    animation-name: animateBtn;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    border-radius: 7px;
+}
+.main-page-intro{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+
+    /* align-items: center; */
+}
+.set-Ab{
+    position: absolute;   
+}
+.c1{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    bottom: 15%;
+    left: 1rem;
+    background-color: rgba(181, 67, 185, 0.03);
+   
+    /* animation-duration: 11s; */
+    /* animation-direction: alternate; */
+}
+.c2{
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    top: 20%;
+    left: 50%;
+    background-color: rgba(21, 68, 75, 0.11);
+}
+.c3{
+    height: 50rem;
+    width: 50rem;
+    border-radius: 50%;
+    top: 50%;
+    right:-20%;
+    background-color: rgba(21, 68, 75, 0.11);
+    animation-name: testBub1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    
+}
+.c1ani{
+    animation-name: testBub;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes animateBtn{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+
+  @keyframes testBub1{
+
+    0%{
+        top: 50%;
+        right:-20%;
+        transform: scale(1); 
+    }
+    30%{
+        transform: scale(1.2);
+    }
+    70%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.4);
+    }
+  }
+@keyframes testBub {
+    0%{
+        transform: translate(1rem,0rem);
+        background-color: rgba(181, 67, 185, 0.03);
+    }
+    10%{
+        transform: translate(1rem,-5rem);
+        background-color: rgba(236, 228, 236, 0.03);
+    }
+    30%{
+        transform: translate(1rem,0rem);
+        background-color: rgba(21, 68, 75, 0.11);
+    }
+    40%{
+        transform: translate(1rem,-10rem);
+        background-color: rgba(21, 68, 75, 0.11);
+    }
+
+
+    50%{
+        transform: translate(1rem,0rem);
+        background-color: rgba(181, 67, 185, 0.03);
+    }
+    60%{
+        transform: translate(1rem,-15rem);
+        background-color: rgba(236, 228, 236, 0.03);
+    }
+    70%{
+        transform: translate(1rem,0rem);
+        background-color: rgba(21, 68, 75, 0.11);
+    }
+    100%{
+        transform: translate(1rem,-50rem);
+        background-color: rgba(21, 68, 75, 0.11);
+    /* }
+    100%{
+        transform: translate(1rem,-50rem);
+        background-color: rgba(21, 68, 75, 0.11);
+    } */
+    /*
+    20%{
+        bottom: 0;
+        left: 0%;
+        background-color: rgba(21, 68, 75, 0.11);
+    }
+    30%{
+        bottom: 40%;
+        left: 3%;
+        background-color: rgba(21, 68, 75, 0.11);
+    }
+    40%{
+        bottom: 0;
+        left: 3%;
+        background-color: rgba(181, 67, 185, 0.03);
+    }
+    50%{
+        bottom: 60%;
+        left: 3%;
+        background-color: rgba(181, 67, 185, 0.03);
+    }
+    60%{
+        bottom: 0;
+        left: 0%;
+        background-color: rgba(21, 68, 75, 0.11);
+    }
+    100%{
+        bottom: 180%;
+        left: 3%;
+        background-color: rgba(21, 68, 75, 0.11);
+    } */
+    
+  }
+
